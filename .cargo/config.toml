@@ -1,0 +1,12 @@
+# in .cargo/config.toml
+
+[build]
+target = "src/x86_64-logan_os.json"
+
+
+[target.'cfg(target_os = "none")']
+runner = "bootimage runner"
+
+[unstable]
+build-std-features = ["compiler-builtins-mem"]
+build-std = ["core", "compiler_builtins"]
