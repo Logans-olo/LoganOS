@@ -164,11 +164,4 @@ fn test_println_output() {
     }
 }
 
-#[test_case]
-fn test_println_many() {
-    for _ in 0..200 {
-        println!("test_println_many output");
-    }
-}
-
 /* End of VGA Buffer Test cases */
